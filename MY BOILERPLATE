@@ -1,0 +1,61 @@
+{
+	// Place your snippets for C++ here. Each snippet is defined under a snippet name 
+	// and has a prefix, body, and description.
+
+	"Basic C++ Boilerplate": {
+		"prefix": "cc",
+		"body": [
+			"#include <iostream>",
+			"using namespace std;",
+			"int main() ",
+			"{",
+			"    cout << $1;",
+			"    return 0;",
+			"}"
+		],
+		"description": "Basic C++ Boilerplate with main function"
+	},
+
+	"Class Boilerplate": {
+		"prefix": "cp",
+		"body": [
+			"#include <iostream>",
+			"using namespace std;",
+			"class ${1:ClassName}",
+			" {",
+			"public:",
+			"    ${1:ClassName}() ",
+			"{",
+			"        cout << \"${1:ClassName} object created!\";",
+			"    }",
+			"};",
+			"",
+			"int main()",
+			"{",
+			"    ${1:ClassName} obj;",
+			"    return 0;",
+			"}"
+		],
+		"description": "Boilerplate for a simple C++ class"
+	},
+
+	"For Loop Boilerplate": {
+		"prefix": "cppfor",
+		"body": [
+			"for(int i = 0; i < ${1:10}; i++) {",
+			"    cout << \"Iteration: \" << i << endl;",
+			"}"
+		],
+		"description": "Simple for loop in C++"
+	},
+
+	"Function Boilerplate": {
+		"prefix": "cppfunc",
+		"body": [
+			"${1:void} ${2:functionName}(${3:int a, int b}) {",
+			"    return ${4:a + b};",
+			"}"
+		],
+		"description": "Basic C++ function template"
+	}
+}
