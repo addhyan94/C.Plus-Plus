@@ -1,4 +1,4 @@
-// WAP to input a number and one variable make static data member and other non-static and display the value of both variables.
+// static data member
 #include <iostream>
 using namespace std;
 class Demo
