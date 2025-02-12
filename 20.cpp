@@ -1,4 +1,4 @@
-// WAP to create a Demo class with a static Member Function and a non-static member function. The static member function should display the value of a static data member and the non-static member function should display the value of a non-static data member. The main function should create an object of the class and call both the functions.
+// static Member Function
 #include <iostream>
 using namespace std;
 class Demo
