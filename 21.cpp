@@ -1,5 +1,5 @@
-// static Member Function
-#include <iostream>
+// Using InLine Function .....
+#include<iostream>
 using namespace std;
 class Demo
 {
