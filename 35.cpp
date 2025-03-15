@@ -1,4 +1,4 @@
-// Wap to overload unary - operator.
+// Wap to overload unary minus operator.
 #include <iostream>
 using namespace std;
 
