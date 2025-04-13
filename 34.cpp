@@ -1,10 +1,11 @@
-// Wap to compare two strings using equal operator.
+// Wap to compare two strings using equal operator .
 #include <iostream>
 #include <string.h>
 using namespace std;
 
 class stringcompare
 {
+    
     char str1[20],str2[20];
     public:
     void getdata()

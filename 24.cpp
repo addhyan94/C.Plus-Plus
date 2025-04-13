@@ -1,4 +1,4 @@
-// Wap to create a class ABC which contain A as a private data and create a another class XYZ which contain X as a private data , find which class is greater.
+// Wap to create a class ABC which contain A as a private data and create a another class XYZ which contain X as a private data , find which class is greater .
 #include <iostream>
 using namespace std;
 
@@ -33,13 +33,17 @@ class XYZ
     }
     void compare(ABC &ob1)
     {
-        if(X>ob1.A)
+        if (X > ob1.A) 
         {
-            cout<<"\nValue of X is greater than A";
+            cout << "\nValue of X is greater than A";
         }
-        else
-        {
-            cout<<"\nValue of A is greater than X";
+         else if (X < ob1.A) 
+         {
+            cout << "\nValue of A is greater than X";
+        }
+         else 
+         {
+            cout << "\nBoth values are equal";
         }
     }
 };
