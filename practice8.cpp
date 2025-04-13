@@ -1,4 +1,4 @@
-// WAP to craete a class your name and another class your family"s name and inherit this class 
+// WAP to craete a class your name and another class your family"s name and inherit this class . 
 
 #include<iostream>
 using namespace std;
