@@ -5,82 +5,104 @@
 #include <iostream>
 using namespace std;
 
-class employee
-{
-    char name[20];
+class Employee {
+    string name;
     int id;
-    float salary;
-    float bonus;
+    float salary, bonus;
+    
     public:
-    void getdata()
-    {
-        cout<<"Enter the name=";
-        cin>>name;
-        cout<<"Enter the id=";
-        cin>>id;
-        cout<<"Enter the salary=";
-        cin>>salary;
+    void getdata() {
+        cout << "Enter Employee ID: ";
+        cin >> id;
+        cout << "Enter Employee Name: ";
+        cin >> name;
+        cout << "Enter Salary: ";
+        cin >> salary;
     }
-    void display()
-    {
-        cout<<"\nName="<<name;
-        cout<<"\nId="<<id;
-        cout<<"\nSalary="<<salary;
-        if(salary<=30000)
-        {
-            bonus=0.2*salary;
-            cout<<"\nBonus="<<bonus;
-        }
-        else if(salary>30000 && salary<=50000)
-        {
-            bonus=0.15*salary;
-            cout<<"\nBonus="<<bonus;
-        }
+    
+    void calculateBonus() {
+        if (salary <= 30000)
+            bonus = salary * 0.20;
+        else if (salary > 30000 && salary <= 50000)
+            bonus = salary * 0.15;
         else
-        {
-            bonus=0.1*salary;
-            cout<<"\nBonus="<<bonus;
-        }
+            bonus = salary * 0.10;
+    }
+    
+    void display() {
+        cout << "\nEmployee ID: " << id;
+        cout << "\nEmployee Name: " << name;
+        cout << "\nSalary: " << salary;
+        cout << "\nBonus: " << bonus << "\n";
     }
 };
 
-int main()
-{
-    employee e[5];
-    for(int i=0;i<5;i++)
-    {
+int main() {
+    Employee e[5];
+    
+    for (int i = 0; i < 5; i++) {
+        cout << "\nEnter details for Employee " << i + 1 << ":\n";
         e[i].getdata();
+        e[i].calculateBonus();
     }
-    for(int i=0;i<5;i++)
-    {
+    
+    cout << "\nEmployee Details with Bonus:\n";
+    for (int i = 0; i < 5; i++) {
         e[i].display();
     }
+    
     return 0;
 }
 
-/* Output ~
-Enter the name=Ankit
-Enter the id=1
-Enter the salary=25000
-Enter the name=Ankush
-Enter the id=2
-Enter the salary=35000
-Enter the name=Anshul
-Enter the id=3
-Enter the salary=45000
-Enter the name=Ansh
-and soo on.............
 
-Id=1
-Salary=25000
-Bonus=5000
-Name=Ankush
-Id=2
-Salary=35000
-Bonus=5250
-Name=Anshul
-Id=3
-Salary=45000
-Bonus=6750
-Name=Ansh
-and so on......*/
+/* Output ~
+Enter details for Employee 1:
+Enter Employee ID: 101
+Enter Employee Name: Raj
+Enter Salary: 25000
+
+Enter details for Employee 2:
+Enter Employee ID: 102
+Enter Employee Name: Aman
+Enter Salary: 35000
+
+Enter details for Employee 3:
+Enter Employee ID: 103
+Enter Employee Name: Simran
+Enter Salary: 50000
+
+Enter details for Employee 4:
+Enter Employee ID: 104
+Enter Employee Name: Priya
+Enter Salary: 60000
+
+Enter details for Employee 5:
+Enter Employee ID: 105
+Enter Employee Name: Rohit
+Enter Salary: 30000
+
+Employee ID: 101
+Employee Name: Raj
+Salary: 25000
+Bonus: 5000
+
+Employee ID: 102
+Employee Name: Aman
+Salary: 35000
+Bonus: 5250
+
+Employee ID: 103
+Employee Name: Simran
+Salary: 50000
+Bonus: 7500
+
+Employee ID: 104
+Employee Name: Priya
+Salary: 60000
+Bonus: 6000
+
+Employee ID: 105
+Employee Name: Rohit
+Salary: 30000
+Bonus: 6000
+*/

@@ -1,4 +1,4 @@
-// Wap to copy one string to another string using assignment operator.
+// Wap to copy one string to another string using assignment ( = ) operator.
 #include <iostream>
 #include <string.h>
 using namespace std;
@@ -16,19 +16,22 @@ class stringcopy
     {
         cout<<"\nString="<<str1;
     }
-    void copy()
-    {
-        strcpy(str2,str1);
-        cout<<"\nCopied string="<<str2;
+  
+    void operator =(stringcopy temp){   // (stringcopy temp) class ka object .......
+        strcpy(str1,temp.str1);
     }
 };
+
+
 
 int main()
 {
     stringcopy s;
     s.getdata();
-    s.display();
-    s.copy();
+
+    stringcopy s2;
+    s2 = s;
+    s2.display();
     return 0;
 }
 
