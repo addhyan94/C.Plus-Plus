@@ -1,4 +1,4 @@
-//Wap to create a class and check number is prime or not and also check number is armstrong or not
+//Wap to create a class and check number is prime or not and also check number is armstrong or not .
 #include <iostream>
 #include <math.h>
 using namespace std;
