@@ -1,4 +1,4 @@
-// Wap to concatenate two strings using + operator .
+// Wap to concatenate two strings using + operator.
 #include <iostream>
 #include <cstring>  
 using namespace std;
