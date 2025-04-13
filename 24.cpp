@@ -1,4 +1,4 @@
-// Wap to create a class ABC which contain A as a private data and create a another class XYZ which contain X as a private data , find which class is greater.
+// Wap to create a class ABC which contain A as a private data and create a another class XYZ which contain X as a private data , find which class is greater .
 #include <iostream>
 using namespace std;
 
