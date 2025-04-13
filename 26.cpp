@@ -1,4 +1,4 @@
-// Wap to create a class student which contain the record of 5 student display the result of all the students toppers source first.
+// Wap to create a class student which contain the record of 5 student display the result of all the students toppers source first .
 #include <iostream>
 using namespace std;
 
