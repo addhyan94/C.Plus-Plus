@@ -1,4 +1,4 @@
-// Wap to copy one string to another string using assignment ( = ) operator.
+// Wap to copy one string to another string using assignment ( = ) operator .
 #include <iostream>
 #include <string.h>
 using namespace std;
