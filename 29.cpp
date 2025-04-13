@@ -1,6 +1,6 @@
 /*Wap to create a class employee which contain the information of employee like employee name, I'd and salary calculate the bonus of the employee basis on the following conditions -
-1- if salary <=30000 then the bonus is 20% of the salary 
-2- if salary>30000 and <= 50000 then the bonus is 15% of the salary 
+1- if salary <=30000 then the bonus is 20% of the salary .
+2- if salary>30000 and <= 50000 then the bonus is 15% of the salary .
 3- if salary is >50000 then bonus is 10% of the salary display the data of 5 employee*/
 #include <iostream>
 using namespace std;
