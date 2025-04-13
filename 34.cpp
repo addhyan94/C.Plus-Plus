@@ -1,4 +1,4 @@
-// Wap to compare two strings using equal operator.
+// Wap to compare two strings using equal operator .
 #include <iostream>
 #include <string.h>
 using namespace std;
