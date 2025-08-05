@@ -1,4 +1,5 @@
 // Write a C++ program to check whether an expression has balanced brackets using stack.
+
 #include <iostream>
 #include <stack>
 using namespace std;
