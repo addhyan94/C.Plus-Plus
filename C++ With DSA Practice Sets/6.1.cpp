@@ -17,7 +17,7 @@ public:
 
     void enqueue(int value) {
         if ((front == 0 && rear == SIZE - 1) || (rear + 1) % SIZE == front) {
-            cout << "Queue is Full\n";
+            cout << "Queue full hai ..... \n";
             return;
         }
 
