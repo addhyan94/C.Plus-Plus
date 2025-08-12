@@ -1,4 +1,4 @@
-// // WAP to implement a simple queue using an aray and class with basic operations like Inqueue, Dqueue, and display. with Switch case .
+//WAP to implement a simple queue using an aray and class with basic operations like Inqueue, Dqueue, and display. with Switch case .
 
 #include <iostream>
 using namespace std;
