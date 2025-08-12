@@ -108,7 +108,7 @@ int main()
         cout<<"\n";
         break;
         default:
-        cout<<"\n Aap ki choice he galat bhai sahi choice Daloo  \n ";
+        cout<<"\n Aap ki choice he galat bhai sahi choice Daloo.....  \n ";
         cout<<"\n";
         }
     } while (choice!=5);
